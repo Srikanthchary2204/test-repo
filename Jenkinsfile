@@ -14,8 +14,6 @@ pipeline {
                 
             }
         }
-    }
-    stages {
         stage('calling run_wrapper.sh') {
             steps {
                 sript{sh'''

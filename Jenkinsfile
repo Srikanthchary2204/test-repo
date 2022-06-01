@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('creating virtual env') {
             steps {
-                script{r=sh( script : '''
+                script{r=bat( script : '''
                     #!/bin/bash
                     rm -rf venv
                     python3 -mvenv venv
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('calling run_wrapper.sh') {
             steps {
-                sript{sh'''
+                sript{bat'''
                      #!bin/bash
                      set -ex
                      gsutil ls gs://demo1-348613/demotabl/

@@ -6,10 +6,10 @@ pipeline {
             steps {
                 script{r=sh( script : '''
                     #!/bin/bash
-                    bash rm -rf venv
-                    bash sh python3 -mvenv venv
-                    bash source venv/bin/activate
-                    bash pip install -r requirements.txt''',)
+                    rm -rf venv
+                    python3 -mvenv venv
+                    source venv/bin/activate
+                    pip install -r requirements.txt''')
                 }
                 
             }

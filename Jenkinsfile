@@ -15,7 +15,6 @@ pipeline {
         stage('calling run_wrapper.sh') {
             steps {
                 sript{bat'''
-                     #!bin/bash
                      set -ex
                      gsutil ls gs://demo1-348613/demotabl/
                      bash run_wrapper.sh'''

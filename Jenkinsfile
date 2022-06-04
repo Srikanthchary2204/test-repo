@@ -4,6 +4,8 @@ pipeline {
         stage('creating virtual env') {
             steps {
                 bat 'run_wrapper.bat'
+                bat 'python -V'
+                bat 'py -2.7 -V'
                 bat 'pip install -r requirements.txt'
                 
             }

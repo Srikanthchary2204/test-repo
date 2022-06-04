@@ -8,6 +8,14 @@ pipeline {
             }
                 
         }
+        stage('calling execute wapper') {
+            steps {
+                bat execute_wrapper.py
+                bat echo "calling: execute wraper"
+                
+            }
+                
+        }
     }
 }
 

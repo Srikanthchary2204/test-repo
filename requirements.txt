@@ -1,6 +1,5 @@
 apache-beam
-google-cloud-storage
-google-cloud-biqquery
+google-cloud-storage==2.3.0
+google-cloud-bigquery==3.1.0
+google-cloud-bigquery-storage==2.13.1
 google-cloud
-subprocess.run
-os-sys

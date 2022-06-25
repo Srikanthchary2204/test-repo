@@ -1,22 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('creating virtual env') {
+        stage('run codes') {
             steps {
-                bat 'run_wrapper.bat'
-                bat 'pip install -r requirements.txt'
-                
-            }
-                
-        }
-        stage('calling codes.py') {
-            steps {
+                bat 'cd C:\Users\hp\Desktop'
+                bat 'ls'
                 bat 'python3 codes.py'
-                echo "called: codes.py"
+                
                 
             }
                 
         }
+        
     }
 }
 

@@ -4,7 +4,7 @@ pipeline {
         stage('run codes') {
             steps {
                 bat 'python3 codes.py'
-                
+                cleanWs()
                 
             }
                 

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('run codes') {
             steps {
-                bat "pip install -r requirements.txt"
+                bat 'cd appdata\local\programs\python\python310\lib\site-packages'
                 bat 'python3 codes.py'
                 cleanWs()
                 
